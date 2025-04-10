@@ -14,7 +14,7 @@ public class OnlinePurchaseManager
     int t=0;
     for (int i=0;i<purchases.size();i++) {
       Gizmo a = purchases.get(i);
-      if (a.getMaker==maker && a.isElectronic) t++;
+      if (a.getMaker()==maker && a.isElectronic()) t++;
     }
     return t;
   }
